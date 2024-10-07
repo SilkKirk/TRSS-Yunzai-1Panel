@@ -1,0 +1,27 @@
+services:
+  yunzai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    hostname: Yunzai
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:2536"
+    volumes:
+      - "${Yunzai_PATH}:/root/Yunzai"
+    healthcheck:
+      test: ["CMD", "curl", "-s", "http://localhost:2536/status"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+    command: sh /start
+    image: trss:yunzai
+    labels:
+      createdBy: "Apps"
+    
+networks:
+  1panel-network:
+    external: true

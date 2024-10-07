@@ -1,0 +1,20 @@
+name: Yunzai
+tags:
+    - 工具
+title: Yunzai
+type: 工具
+description: Yunzai
+additionalProperties:
+    key: Yunzai
+    name: Yunzai
+    tags:
+        - Tool
+    shortDescZh: Yunzai
+    shortDescEn: Yunzai
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/TimeRainStarSky/Yunzai
+    github: https://github.com/TimeRainStarSky/Yunzai
+    document: https://github.com/TimeRainStarSky/Yunzai
