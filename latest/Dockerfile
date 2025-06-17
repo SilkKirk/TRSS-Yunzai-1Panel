@@ -12,7 +12,6 @@ RUN sed -i "s|deb.debian.org|mirrors.ustc.edu.cn|g" /etc/apt/sources.list.d/debi
     && apt autoremove --purge -y\
     && apt clean\
     && git config --global --add safe.directory "*"\
-    && sudo apt install npm
     && npm install -g pnpm --registry "https://registry.npmmirror.com"\
     && rm -rf /var/cache/* /var/log/* /var/lib/apt /root/.npm
 
