@@ -1,16 +1,16 @@
-name: Yunzai
+name: trssyunzai
 tags:
     - 工具
-title: Yunzai
+title: trssyunzai
 type: 工具
-description: Yunzai
+description: trssyunzai
 additionalProperties:
-    key: Yunzai
-    name: Yunzai
+    key: trssyunzai
+    name: trssyunzai
     tags:
         - Tool
-    shortDescZh: Yunzai
-    shortDescEn: Yunzai
+    shortDescZh: trssyunzai
+    shortDescEn: trssyunzai
     type: tool
     crossVersionUpdate: true
     limit: 0
