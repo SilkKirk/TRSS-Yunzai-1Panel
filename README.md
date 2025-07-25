@@ -1,12 +1,5 @@
 ## 使用方式
 
-github代理地址
-- 自建 : https://gh.spoli.cn/ 
-- 网络 : https://ghproxy.link/
-
-*注意:* 失效请自行寻找代理
-docker镜像已添加自建代理
-
 ### 1 使用 git 命令获取应用
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者保存为sh然后在终端运行。
@@ -18,7 +11,7 @@ install_dir=$(which 1pctl | xargs grep '^BASE_DIR=' | cut -d'=' -f2)
 
 rm -rf $install_dir/1panel/resource/apps/local/trss-yunzai
 
-git clone -b main https://gh.spoli.cn/https://github.com/SilkKirk/TRSS-Yunzai-1Panel.git "$install_dir/1panel/resource/apps/local/trss-yunzai"
+git clone -b main https://github.com/SilkKirk/TRSS-Yunzai-1Panel.git "$install_dir/1panel/resource/apps/local/trss-yunzai"
 
 if [ $? -eq 0 ]; then
     rm -rf $install_dir/1panel/resource/apps/local/trssyunzai
